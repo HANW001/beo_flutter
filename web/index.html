@@ -13,6 +13,16 @@
   -->
   <base href="/">
 
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
+  <script>
+    // SDK를 초기화 합니다. 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('592b62707a03c5616e19cdbbf985a42b');
+
+    // SDK 초기화 여부를 판단합니다.
+    console.log(Kakao.isInitialized());
+</script>
+
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
@@ -30,7 +40,7 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
+  <script >
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
     function loadMainDartJs() {
